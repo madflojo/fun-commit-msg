@@ -5,7 +5,7 @@ license: Apache-2.0
 compatibility: Requires git.
 metadata:
   version: "1.0.0"
-  owner: madflojo
+  author: Benjamin Cane
   repository: fun-commit-msg
 ---
 
