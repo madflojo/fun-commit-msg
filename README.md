@@ -65,13 +65,13 @@ These are examples of the kind of messages this skill should generate:
 - `fix(auth): handle expired token refresh before retries`
 - `docs: add gh skill install guidance without the treasure map`
 - `refactor(config): split validation from defaults for calmer constructors`
-- `test(cache): cover stale entry eviction before it gets weird`
+- `test(cache): catch stale entry eviction before it starts free-range browsing`
 
 That means most outputs stay clean and conventional, while lighter changes can
 end with a single relevant emoji:
 
 - `docs: add gh skill install guidance without the treasure map 🗺️`
-- `test(cache): cover stale entry eviction before it gets weird 🧹`
+- `test(cache): catch stale entry eviction before it starts free-range browsing 🧹`
 
 For a non-trivial change, the skill can also produce a short body:
 

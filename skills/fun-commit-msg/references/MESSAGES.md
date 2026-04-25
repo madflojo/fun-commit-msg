@@ -40,7 +40,7 @@ Add a body only when it helps future readers understand:
 - `fix(skill): handle empty staged diff before commit`
 - `refactor(release): align skill metadata with repo name`
 - `docs(readme): clarify manual install fallback`
-- `docs: add install steps without sending readers on a side quest`
+- `docs: add install steps without sending readers on a scavenger hunt`
 - `fix(commit): preserve partial staging when the worktree gets spicy`
 - `docs: add install guidance without the treasure map 🗺️`
-- `test(cache): cover stale eviction before it gets weird 🧹`
+- `test(cache): catch stale eviction before it starts free-range browsing 🧹`
