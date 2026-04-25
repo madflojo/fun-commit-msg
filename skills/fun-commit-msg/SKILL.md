@@ -1,10 +1,14 @@
 ---
 name: fun-commit-msg
-description: Generate a polished Conventional Commit message and perform a safe non-interactive git commit for already-reviewed changes. Use this skill when creating a git commit, especially when the user wants a Conventional Commit message or has already staged a coherent set of changes. Follow the operating rules to ensure the commit is accurate, professional, and respects the user's staging choices.
+description: >-
+  Generates polished Conventional Commit messages with a light, contextual wink
+  and performs safe non-interactive git commits for already-reviewed changes.
+  Use when the task involves committing changes, drafting a git commit message,
+  applying Conventional Commits, or turning a coherent staged diff into a
+  final commit without disturbing the user's staging choices.
 license: Apache-2.0
 compatibility: Requires git.
 metadata:
-  version: "1.0.0"
   author: Benjamin Cane
   repository: fun-commit-msg
 ---
@@ -15,8 +19,9 @@ Use this skill when the user wants help committing work, needs a Conventional
 Commit message, or wants the agent to turn staged changes into a clean commit
 without fighting the shell.
 
-Keep the result professional and accurate first. A small amount of contextual
-humor is welcome, but clarity beats jokes every time.
+Add a little bit of contextual humor to the commit message, not much,
+just a little bit to where if someone reads it, they might chuckle,
+but the message is still relevant and professional.
 
 ## When to Use
 
@@ -29,6 +34,14 @@ Use this skill when:
 
 Do not use this skill to decide broad staging strategy for a messy worktree
 without confirming intent first.
+
+## Tool Scope
+
+Use the git CLI and basic shell commands needed to inspect the repository,
+review the staged diff, and create the commit safely.
+
+Do not reach for extra tools or editors when `git status`, `git diff`,
+`git rev-parse`, and `git commit` cover the task.
 
 ## Operating Rules
 
@@ -112,9 +125,11 @@ EOF
 - Prefer a one-line commit for small changes.
 - Use a short body for non-trivial changes, behavior changes, or important
   rationale.
-- Never lead with an emoji.
-- One emoji at the end of the subject is acceptable if it fits naturally.
-- Keep humor light and relevant. If the change is serious, skip the joke.
+- Never lead with an emoji, but feel free to add one emoji at the end
+  of the subject if it fits naturally.
+- Add a little bit of contextual humor to the commit message, not much, just
+  a little bit to where if someone reads it, they might chuckle, but the
+  message is still relevant and professional.
 
 ## Failure Modes
 
@@ -147,5 +162,5 @@ When asked to perform the commit:
 
 ## Reference
 
-Use `references/MESSAGES.md` for commit-message heuristics and examples when
-you need a quick rubric.
+Load `references/MESSAGES.md` only when you need extra commit-message
+heuristics or examples beyond the workflow in this file.
