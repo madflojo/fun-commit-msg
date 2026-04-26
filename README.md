@@ -32,21 +32,26 @@ Supporting guidance lives under `references/`.
 
 ## Installing the skill
 
-Primary paths: install with GitHub CLI or via `npx skills add`.
+Install with GitHub CLI:
 
 ```bash
 gh skill install madflojo/fun-commit-msg
+```
+
+Install with `npx`:
+
+```bash
 npx skills add -g -y madflojo/fun-commit-msg
 ```
 
-GitHub CLI supports pinned installs for reproducible setups:
+Optional: pin the GitHub CLI install to a tag or commit for reproducible installs:
 
 ```bash
 gh skill install madflojo/fun-commit-msg@v1.0.0
 gh skill install madflojo/fun-commit-msg@<commit-sha>
 ```
 
-Manual fallback: copy `skills/fun-commit-msg/` into either:
+Fallback path: manually copy `skills/fun-commit-msg/` into either:
 
 - `.agents/skills/` in a repository
 - `~/.agents/skills/` for a user-level install
